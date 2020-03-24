@@ -6,5 +6,20 @@
   gtag('js', new Date());
 
   gtag('config', '{{ site.google_analytics }}');
+
+  var typing = document.getElementById('intro');
+
+  var typewriter = new Typewriter(typing, {
+    loop: true
+  });
+
+  typewriter.typeString('안녕하세요 김성래입니다.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString('방문을 환영합니다.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString('오늘도 좋은 하루되세요^^')
+    .start();
 </script>
 
